@@ -1,0 +1,44 @@
+body {
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content {
+    background-color: rgba(211, 195, 195, 0.712);
+    padding: 25px;
+    border-radius: 4px;
+}
+.order-state {
+    padding-left: 20px;
+    padding-top: 25px;
+    border-left: 1px solid rgb(54, 54, 54);
+}
+.size-img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+
+}
+.radio-label {
+    position: absolute;
+    margin-left: -64px;
+    margin-top: 30px;
+}
+.js-check-top input {
+    margin: 5px;
+}
+.js-check-additions input {
+    margin: 5px;
+}
+.js-radio-size {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.js-radio-size label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+  }
