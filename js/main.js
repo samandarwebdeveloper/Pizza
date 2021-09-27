@@ -13,8 +13,9 @@ var breadHeight = ["Yupqa","Qalin","Oddiy"];
 
 //Create and append select list
 var selectList = document.createElement("select");
-selectList.value = "non";
+selectList.name = "Bread-type";
 selectList.id = "bread";
+selectList.value = breadHeight[i];
 selectBreadOption.appendChild(selectList);
 
 //Create and append the options
@@ -107,7 +108,7 @@ for (let i = 0; i < sizeBreadArr.length; i++) {
 // Create toply checkboxes
 var elTopCheckboxList = document.querySelector(".js-check-top");
 elTopCheckboxList.classList.add("col-7");
-var breadToply = ["Pomidor", "Kurka go'shtli", "Tuzlangan bodiring", "Qo'ziqorin", "Zaytun", "Qazi"];
+var breadToply = ["Pomidor", `Kurka go'shtli`, "Tuzlangan bodiring", `Qo'ziqorin`, "Zaytun", "Qazi"];
 
 
 for (var i = 0; i < breadToply.length; i++) {
@@ -115,10 +116,11 @@ for (var i = 0; i < breadToply.length; i++) {
   var toplyElemntsCheckbox = document.createElement("input");
   var toplyElemtsSpan = document.createElement("span");
 
+  toplyElemntsCheckbox.name = "Toply";
+
   toplyElemntsCheckbox.type = "checkbox";
   toplyElemntsCheckbox.id = i;
   toplyElemntsCheckbox.value = breadToply[i];
-
   toplyElemtsSpan.textContent = breadToply[i];
 
   toplyElemntsCheckbox.addEventListener("change", function (evt) {
@@ -161,7 +163,8 @@ for (var i = 0; i < additionslist.length; i++) {
     var additionsElemntsLabel = document.createElement("label");
     var additionsElemntsCheckbox = document.createElement("input");
     var additionsElemtsSpan = document.createElement("span");
-  
+
+    additionsElemntsCheckbox.name = "Addintions";
     additionsElemntsCheckbox.type = "checkbox";
     additionsElemntsCheckbox.id = i;
     additionsElemntsCheckbox.value = additionslist[i];
